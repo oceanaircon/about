@@ -1,6 +1,10 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import "./globals.css";
+import "./styles.css";
+import Head from "next/head";
+import "@fortawesome/fontawesome-svg-core/styles.css"; // import Font Awesome CSS
+import { config } from "@fortawesome/fontawesome-svg-core";
+config.autoAddCss = false; // Tell Font Awesome to skip adding the CSS automatically since it's being imported above
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -16,7 +20,29 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <Head>
+        <meta charSet="utf-8" />
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Fehér Fregatt</title>
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <link
+          href="https://fonts.googleapis.com/css?family=Montserrat:400,700"
+          rel="stylesheet"
+          type="text/css"
+        />
+        <link
+          href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic"
+          rel="stylesheet"
+          type="text/css"
+        />
+        <link href="./styles.css" rel="stylesheet" />
+      </Head>
+      <body id="page-top">{children}</body>
     </html>
   );
 }
