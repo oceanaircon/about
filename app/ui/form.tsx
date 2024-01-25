@@ -1,3 +1,4 @@
+import React from "react";
 import { createMessenger } from "../lib/actions";
 
 export default function Form() {
@@ -5,12 +6,12 @@ export default function Form() {
     <form action={createMessenger} id="contactForm">
       {/*<!-- Name input-->*/}
       <div className="form-floating mb-3">
-        <input className="form-control" id="name" name="name" type="text" />
+        <input className="form-control" id="name" type="text" name="name" />
         <label htmlFor="name">Full name</label>
       </div>
       {/*<!-- Email address input-->*/}
       <div className="form-floating mb-3">
-        <input className="form-control" id="email" name="email" type="email" />
+        <input className="form-control" id="email" type="email" name="email" />
         <label htmlFor="email">Email address</label>
       </div>
 
@@ -30,6 +31,7 @@ export default function Form() {
         className="btn btn-primary btn-xl"
         id="submitButton"
         type="submit"
+        name="submit"
         value="Send"
       ></input>
     </form>
