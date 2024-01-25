@@ -40,7 +40,7 @@ export async function createMessenger(formData: FormData) {
   }
 
   try {
-    await fetch("http://localhost:3000/api/send", {
+    await fetch(url + "/api/send", {
       method: "POST",
       body: JSON.stringify({ name, email, message }),
       headers: new Headers({
@@ -49,13 +49,7 @@ export async function createMessenger(formData: FormData) {
       }),
     });
   } catch (error) {
-    await prisma.messenger.create({
-      data: {
-        name: "hiba",
-        email: "hiba@valami.nk",
-        message: error as any,
-      },
-    });
+    console.log(error);
   }
 
   revalidatePath("/");
