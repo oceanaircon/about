@@ -40,10 +40,10 @@ export async function createMessenger(formData: FormData) {
     };
   }
 
-  revalidatePath(url + "/");
   redirect(url + "/success");
 }
 
 export async function redirectBack() {
+  revalidatePath(url + "/");
   redirect(url + "/");
 }
