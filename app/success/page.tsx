@@ -1,5 +1,5 @@
 import React from "react";
-import { redirectBack } from "../lib/actions";
+import { redirectBack } from "@/app/lib/actions";
 
 const Success = () => {
   return (

@@ -1,5 +1,5 @@
 import React from "react";
-import { createMessenger } from "../lib/actions";
+import { createMessenger } from "@/app/lib/actions";
 
 export default function Form() {
   return (

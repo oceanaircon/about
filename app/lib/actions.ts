@@ -5,6 +5,8 @@ import { revalidatePath } from "next/cache";
 import { redirect } from "next/navigation";
 import { z } from "zod";
 
+const url = process.env.URL;
+
 const createMessengerSchema = z.object({
   id: z.coerce.number(),
   name: z.string().min(1),
@@ -38,10 +40,10 @@ export async function createMessenger(formData: FormData) {
     };
   }
 
-  revalidatePath("/");
-  redirect("/success");
+  revalidatePath(url + "/");
+  redirect(url + "/success");
 }
 
 export async function redirectBack() {
-  redirect("/");
+  redirect(url + "/");
 }
