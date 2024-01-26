@@ -40,7 +40,7 @@ export async function createMessenger(formData: FormData) {
   }
 
   try {
-    await fetch(url + "/api/send", {
+    await fetch(url + "api/send", {
       method: "POST",
       body: JSON.stringify({ name, email, message }),
       headers: new Headers({
