@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAnchor } from "@fortawesome/free-solid-svg-icons";
 
 const About = () => {
+  const url = process.env.URL + "public/Oliver Thek Resume 2024.pdf";
   return (
     <section className="page-section bg-primary text-white mb-0" id="about">
       <div className="container">
@@ -49,12 +50,9 @@ const About = () => {
         </div>
         {/*<!-- About Section Button-->*/}
         <div className="text-center mt-4">
-          <a
-            className="btn btn-xl btn-outline-light"
-            href="https://startbootstrap.com/theme/freelancer/"
-          >
+          <a className="btn btn-xl btn-outline-light" href={url}>
             <i className="fas fa-download me-2"></i>
-            Download CV
+            Download Resume
           </a>
         </div>
       </div>
