@@ -2,6 +2,7 @@ import React from "react";
 import "@/app/styles.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAnchor } from "@fortawesome/free-solid-svg-icons";
+import Link from "next/link";
 
 const About = () => {
   const url = process.env.URL + "public/Oliver Thek Resume 2024.pdf";
@@ -50,10 +51,10 @@ const About = () => {
         </div>
         {/*<!-- About Section Button-->*/}
         <div className="text-center mt-4">
-          <a className="btn btn-xl btn-outline-light" href={url}>
+          <Link className="btn btn-xl btn-outline-light" href={url}>
             <i className="fas fa-download me-2"></i>
             Download Resume
-          </a>
+          </Link>
         </div>
       </div>
     </section>
