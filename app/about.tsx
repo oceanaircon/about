@@ -5,7 +5,7 @@ import { faAnchor } from "@fortawesome/free-solid-svg-icons";
 import Link from "next/link";
 
 const About = () => {
-  const url = process.env.URL + "public/Oliver Thek Resume 2024.pdf";
+  const url = process.env.URL + "public/ot_resume2024.pdf";
   return (
     <section className="page-section bg-primary text-white mb-0" id="about">
       <div className="container">
