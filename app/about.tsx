@@ -3,6 +3,7 @@ import "@/app/styles.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAnchor } from "@fortawesome/free-solid-svg-icons";
 import Link from "next/link";
+import DownloadButton from "./ui/DownloadButton";
 
 const About = () => {
   const url = process.env.URL + "public/ot_resume2024.pdf";
@@ -51,10 +52,7 @@ const About = () => {
         </div>
         {/*<!-- About Section Button-->*/}
         <div className="text-center mt-4">
-          <Link className="btn btn-xl btn-outline-light" href={url}>
-            <i className="fas fa-download me-2"></i>
-            Download Resume
-          </Link>
+          <DownloadButton />
         </div>
       </div>
     </section>
