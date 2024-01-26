@@ -9,9 +9,11 @@ const url = process.env.URL;
 
 const createMessengerSchema = z.object({
   id: z.coerce.number(),
-  name: z.string().min(1),
-  email: z.string().min(1),
-  message: z.string().min(12),
+  name: z.string().min(5, { message: "Must be 5 or more characters long" }),
+  email: z.string().email({ message: "Invalid email address" }),
+  message: z
+    .string()
+    .min(12, { message: "Must be 12 or more characters long" }),
   createdAt: z.string(),
 });
 
