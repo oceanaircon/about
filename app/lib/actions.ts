@@ -8,20 +8,13 @@ import { z } from "zod";
 const url = process.env.URL;
 
 const createMessengerSchema = z.object({
-  id: z.coerce.number(),
   name: z.string().min(2, { message: "Must be 2 or more characters long" }),
   email: z.string().email({ message: "Invalid email address" }),
   message: z.string().min(12, { message: "Must be 2 or more characters long" }),
-  createdAt: z.string(),
-});
-
-const CreateMessenger = createMessengerSchema.omit({
-  id: true,
-  createdAt: true,
 });
 
 export async function createMessenger(formData: FormData) {
-  const { name, email, message } = CreateMessenger.parse({
+  const { name, email, message } = createMessengerSchema.parse({
     name: formData.get("name"),
     email: formData.get("email"),
     message: formData.get("message"),
