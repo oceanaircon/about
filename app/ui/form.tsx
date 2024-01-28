@@ -1,9 +1,34 @@
+"use client";
+
 import React from "react";
+import { useFormStatus, useFormState } from "react-dom";
 import { createMessenger } from "@/app/lib/actions";
 
-export default function Form() {
+const initialState = {
+  message: "",
+};
+
+export function SubmitButton() {
+  const { pending } = useFormStatus();
+
   return (
-    <form action={createMessenger} id="contactForm">
+    <button
+      className="btn btn-primary btn-xl"
+      id="submitButton"
+      type="submit"
+      name="submit"
+      aria-disabled={pending}
+    >
+      Send
+    </button>
+  );
+}
+
+export default function Form() {
+  const [state, formAction] = useFormState(createMessenger, initialState);
+
+  return (
+    <form action={formAction} id="contactForm">
       {/*<!-- Name input-->*/}
       <div className="form-floating mb-3">
         <input
@@ -38,15 +63,11 @@ export default function Form() {
         <label htmlFor="message">Message</label>
       </div>
       {/*<!-- Submit message-->*/}
-
       {/*<!-- Submit Button-->*/}
-      <input
-        className="btn btn-primary btn-xl"
-        id="submitButton"
-        type="submit"
-        name="submit"
-        value="Send"
-      ></input>
+      <SubmitButton></SubmitButton>
+      <p aria-live="polite" className="sr-only" role="status">
+        {state?.message}
+      </p>
     </form>
   );
 }

@@ -20,7 +20,12 @@ const CreateMessenger = createMessengerSchema.omit({
   createdAt: true,
 });
 
-export async function createMessenger(formData: FormData) {
+export async function createMessenger(
+  prevState: {
+    message: string;
+  },
+  formData: FormData
+) {
   const { name, email, message } = CreateMessenger.parse({
     name: formData.get("name"),
     email: formData.get("email"),
@@ -53,7 +58,7 @@ export async function createMessenger(formData: FormData) {
   }
 
   revalidatePath("/");
-  redirect("/success");
+  return { message: "Message has been sent." };
 }
 
 export async function redirectBack() {
