@@ -1,3 +1,5 @@
+"use client";
+
 import { redirectBack } from "../lib/actions";
 
 export default function Error() {
