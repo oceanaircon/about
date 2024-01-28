@@ -1,3 +1,5 @@
+"use client";
+
 export default function Error({ reset }: { reset: () => void }) {
   return (
     <div className="container d-flex align-items-center flex-column py-4">
