@@ -14,35 +14,39 @@ const createMessengerSchema = z.object({
 });
 
 export async function createMessenger(formData: FormData) {
-  const { name, email, message } = createMessengerSchema.parse({
-    name: formData.get("name"),
-    email: formData.get("email"),
-    message: formData.get("message"),
-  });
-
   try {
-    await prisma.messenger.create({
-      data: {
-        name: name,
-        email: email,
-        message: message,
-      },
+    const { name, email, message } = createMessengerSchema.parse({
+      name: formData.get("name"),
+      email: formData.get("email"),
+      message: formData.get("message"),
     });
-  } catch (error) {
-    throw error;
-  }
 
-  try {
-    await fetch(url + "api/send", {
-      method: "POST",
-      body: JSON.stringify({ name, email, message }),
-      headers: new Headers({
-        "Content-type": "application/json",
-        Accept: "application/json",
-      }),
-    });
+    try {
+      await prisma.messenger.create({
+        data: {
+          name: name,
+          email: email,
+          message: message,
+        },
+      });
+    } catch (error) {
+      throw error;
+    }
+
+    try {
+      await fetch(url + "api/send", {
+        method: "POST",
+        body: JSON.stringify({ name, email, message }),
+        headers: new Headers({
+          "Content-type": "application/json",
+          Accept: "application/json",
+        }),
+      });
+    } catch (error) {
+      console.log(error);
+    }
   } catch (error) {
-    console.log(error);
+    redirect("/error");
   }
 
   revalidatePath("/");
