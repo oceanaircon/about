@@ -21,30 +21,22 @@ export async function createMessenger(formData: FormData) {
       message: formData.get("message"),
     });
 
-    try {
-      await prisma.messenger.create({
-        data: {
-          name: name,
-          email: email,
-          message: message,
-        },
-      });
-    } catch (error) {
-      throw error;
-    }
+    await prisma.messenger.create({
+      data: {
+        name: name,
+        email: email,
+        message: message,
+      },
+    });
 
-    try {
-      await fetch(url + "api/send", {
-        method: "POST",
-        body: JSON.stringify({ name, email, message }),
-        headers: new Headers({
-          "Content-type": "application/json",
-          Accept: "application/json",
-        }),
-      });
-    } catch (error) {
-      console.log(error);
-    }
+    await fetch(url + "api/send", {
+      method: "POST",
+      body: JSON.stringify({ name, email, message }),
+      headers: new Headers({
+        "Content-type": "application/json",
+        Accept: "application/json",
+      }),
+    });
   } catch (error) {
     redirect("/error");
   }
