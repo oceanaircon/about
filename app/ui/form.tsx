@@ -2,7 +2,7 @@
 
 import React from "react";
 import { createMessenger } from "@/app/lib/actions";
-import useServerAction from "./useServerActions";
+import useServerAction from "../lib/useServerActions";
 
 export default function Form() {
   const [runAction, isRunning] = useServerAction(createMessenger);

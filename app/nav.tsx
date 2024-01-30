@@ -1,56 +1,52 @@
-import React from "react";
-import "@/app/styles.css";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBars } from "@fortawesome/free-solid-svg-icons";
+import Link from "next/link";
+import NavButton from "./ui/NavButton";
 
 const Nav = () => {
   return (
-    <nav
-      className="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top"
-      id="mainNav"
-    >
-      <div className="container">
-        <a className="navbar-brand" href="#page-top">
-          Oliver Thek
-        </a>
-        <button
-          className="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarResponsive"
-          aria-controls="navbarResponsive"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <FontAwesomeIcon
-            style={{ fontSize: "25px" }}
-            icon={faBars}
-          ></FontAwesomeIcon>
-        </button>
-        <div className="collapse navbar-collapse" id="navbarResponsive">
-          <ul className="navbar-nav ms-auto">
-            <li className="nav-item mx-0 mx-lg-1">
-              <a
-                className="nav-link py-3 px-0 px-lg-3 rounded"
-                href="#portfolio"
-              >
-                Portfolio
-              </a>
-            </li>
-            <li className="nav-item mx-0 mx-lg-1">
-              <a className="nav-link py-3 px-0 px-lg-3 rounded" href="#about">
-                About
-              </a>
-            </li>
-            <li className="nav-item mx-0 mx-lg-1">
-              <a className="nav-link py-3 px-0 px-lg-3 rounded" href="#contact">
-                Contact
-              </a>
-            </li>
-          </ul>
+    <>
+      <nav
+        className="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top"
+        id="mainNav"
+      >
+        <div className="container">
+          <Link className="navbar-brand" href="#page-top">
+            Oliver Thek
+          </Link>
+
+          {/*NavButton  */}
+          <NavButton />
+
+          <div className="collapse navbar-collapse" id="navbarResponsive">
+            <ul className="navbar-nav ms-auto">
+              <li className="hidden nav-item mx-0 mx-lg-1">
+                <Link
+                  className="nav-link py-3 px-0 px-lg-3 rounded"
+                  href="#portfolio"
+                >
+                  Portfolio
+                </Link>
+              </li>
+              <li className="nav-item mx-0 mx-lg-1">
+                <Link
+                  className="nav-link py-3 px-0 px-lg-3 rounded"
+                  href="#about"
+                >
+                  About
+                </Link>
+              </li>
+              <li className="nav-item mx-0 mx-lg-1">
+                <Link
+                  className="nav-link py-3 px-0 px-lg-3 rounded"
+                  href="#contact"
+                >
+                  Contact
+                </Link>
+              </li>
+            </ul>
+          </div>
         </div>
-      </div>
-    </nav>
+      </nav>
+    </>
   );
 };
 
