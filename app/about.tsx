@@ -29,24 +29,31 @@ const About = () => {
         <div className="row">
           <div className="col-lg-4 ms-auto">
             <p className="lead">
-              Worked on various aspects of web development, from front-end to
-              back-end. Contributed to the development of RESTful APIs using
-              Node.js and Express. Implemented and maintained database
-              structures using SQL and MongoDB. Participated in code reviews to
-              ensure high-quality code and adherence to coding standards.
-              Collaborated with UI/UX designers to create visually appealing and
-              intuitive user interfaces.
+              Development of full-stack web applications, desktop, and mobile
+              applications
+            </p>
+            <p className="lead">
+              Advanced knowledge in HTML5, CSS3, Javascript, Typescript, React,
+              and Next.js for two years
+            </p>
+            <p className="lead">
+              {" "}
+              One-year experience in C#, .NET, Java, Python, and Php
+            </p>
+            <p className="lead">
+              Several years of practice in designing, creating, and overseeing
+              databases
             </p>
           </div>
           <div className="col-lg-4 me-auto">
             <p className="lead">
-              Developed and maintained robust server-side components using
-              Node.js and PHP. Designed and implemented responsive and dynamic
-              user interfaces using React.js and Next.js. Utilized TypeScript to
-              enhance code maintainability and scalability. Integrated
-              third-party APIs and services to extend the functionality of web
-              applications. Optimized database queries and ensured efficient
-              data storage and retrieval.
+              SKILLS <br />
+              Independent and a team player <br />
+              Recognition and handling of errors and security vulnerabilities{" "}
+              <br />
+              Good logic and creativity <br />
+              Understanding of documentation and instructions <br />
+              Intermediate level of English language
             </p>
           </div>
         </div>

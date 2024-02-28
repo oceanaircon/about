@@ -2,6 +2,7 @@ import React from "react";
 import "@/app/styles.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAnchor } from "@fortawesome/free-solid-svg-icons";
+import Link from "next/link";
 
 const Portfolio = () => {
   return (
@@ -24,34 +25,11 @@ const Portfolio = () => {
         </div>
         {/*<!-- Portfolio Grid Items-->*/}
         <div className="row justify-content-center">
-          {/*<!-- Portfolio Item 1-->*/}
-          <div className="col-md-6 col-lg-4 mb-5">
-            <div
-              className="portfolio-item mx-auto"
-              data-bs-toggle="modal"
-              data-bs-target="#portfolioModal1"
-            >
-              <div className="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                <div className="portfolio-item-caption-content text-center text-white">
-                  <i className="fas fa-plus fa-3x"></i>
-                </div>
-              </div>
-            </div>
-          </div>
-          {/*<!-- Portfolio Item 2-->*/}
-          <div className="col-md-6 col-lg-4 mb-5">
-            <div
-              className="portfolio-item mx-auto"
-              data-bs-toggle="modal"
-              data-bs-target="#portfolioModal2"
-            >
-              <div className="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                <div className="portfolio-item-caption-content text-center text-white">
-                  <i className="fas fa-plus fa-3x"></i>
-                </div>
-              </div>
-            </div>
-          </div>
+        <button
+        className="btn btn-primary btn-xl"
+        name="Alfa-Kontakt"
+      >
+      </button>
         </div>
       </div>
     </section>
