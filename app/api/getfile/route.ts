@@ -3,7 +3,7 @@ import path from "path";
 
 export async function GET() {
   const buffer = await readFile(
-    path.join(process.cwd(), "/public", "ot_resume2024.pdf")
+    path.join(process.cwd(), "/public", "theko_resume.pdf")
   );
 
   const headers = new Headers();
