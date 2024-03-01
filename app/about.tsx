@@ -6,7 +6,7 @@ import Link from "next/link";
 import DownloadButton from "./ui/DownloadButton";
 
 const About = () => {
-  const url = process.env.URL + "public/ot_resume2024.pdf";
+  const url = process.env.URL + "public/theko_resume.pdf";
   return (
     <section className="page-section bg-primary text-white mb-0" id="about">
       <div className="container">
@@ -28,33 +28,20 @@ const About = () => {
         {/*<!-- About Section Content-->*/}
         <div className="row">
           <div className="col-lg-4 ms-auto">
-            <p className="lead">
-              Development of full-stack web applications, desktop, and mobile
-              applications
-            </p>
-            <p className="lead">
-              Advanced knowledge in HTML5, CSS3, Javascript, Typescript, React,
-              and Next.js for two years
-            </p>
-            <p className="lead">
-              {" "}
-              One-year experience in C#, .NET, Java, Python, and Php
-            </p>
-            <p className="lead">
-              Several years of practice in designing, creating, and overseeing
-              databases
-            </p>
+            <h3>PRACTICE</h3>
+            <ul>
+              <li>
+                Development of fullstack web applications, desktop, and mobile
+                applications
+              </li>
+              <li>Advanced knowledge in HTML5, CSS3, Javascript</li>
+              <li>Typescript, React, and Next.js – 2 years </li>
+              <li>C#, .NET, Java, Python, PHP – 2 years </li>
+              <li>SQL, MySQL, MariaDB, MongoDB – 3 years</li>
+            </ul>
           </div>
-          <div className="col-lg-4 me-auto">
-            <p className="lead">
-              SKILLS <br />
-              Independent and a team player <br />
-              Recognition and handling of errors and security vulnerabilities{" "}
-              <br />
-              Good logic and creativity <br />
-              Understanding of documentation and instructions <br />
-              Intermediate level of English language
-            </p>
+          <div className="col-lg-4 ms-auto">
+            <p className="lead"></p>
           </div>
         </div>
         {/*<!-- About Section Button-->*/}
