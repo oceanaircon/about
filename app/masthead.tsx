@@ -11,8 +11,8 @@ const Masthead = () => {
         {/*<!-- Masthead Avatar Image-->*/}
         <Image
           src="/cool-profile-icons-70.png"
-          width={322}
-          height={322}
+          width={300}
+          height={300}
           alt="profile_icon"
         />
         {/*<!-- Masthead Heading-->*/}

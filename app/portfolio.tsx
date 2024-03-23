@@ -24,12 +24,19 @@ const Portfolio = () => {
           <div className="divider-custom-line"></div>
         </div>
         {/*<!-- Portfolio Grid Items-->*/}
-        <div className="row justify-content-center">
-        <button
-        className="btn btn-primary btn-xl"
-        name="Alfa-Kontakt"
-      >
-      </button>
+        <div className="container text-center">
+          <div className="row justify-content-center">
+            <a href="https://printer-bookings.vercel.app">
+              <h3>printer-bookings.vercel.app</h3>
+            </a>
+            <h5>A printer rental admin dashboard</h5>
+          </div>
+          <div className="row justify-content-center">
+            <a href="https://teddlefoldre.vercel.app">
+              <h3>teddlefoldre.vercel.app</h3>
+            </a>
+            <h5>Create your own blog</h5>
+          </div>
         </div>
       </div>
     </section>

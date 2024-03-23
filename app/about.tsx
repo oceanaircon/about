@@ -30,18 +30,27 @@ const About = () => {
           <div className="col-lg-4 ms-auto">
             <h3>PRACTICE</h3>
             <ul>
-              <li>
-                Development of fullstack web applications, desktop, and mobile
-                applications
-              </li>
-              <li>Advanced knowledge in HTML5, CSS3, Javascript</li>
-              <li>Typescript, React, and Next.js – 2 years </li>
-              <li>C#, .NET, Java, Python, PHP – 2 years </li>
-              <li>SQL, MySQL, MariaDB, MongoDB – 3 years</li>
+              <li>Full-stack web developer</li>
+              <li>HTML5, CSS3, Javascript - 3 years</li>
+              <li>MySQL, MongoDB, ORM - 3 years</li>
+              <li>Typescript, Node, React, Next.js - 2 years </li>
+              <li>Building Rest API with Node.js or PHP</li>
+              <li>Git - 2 years</li>
+              <li>C#, .NET, Java, Python, PHP - 2 years </li>
             </ul>
           </div>
           <div className="col-lg-4 ms-auto">
             <p className="lead"></p>
+            <h3>SKILLS</h3>
+            <ul>
+              <li>Passionate about coding </li>
+              <li>
+                Ability to solve problems and to adjust to deadlines and project
+                goals
+              </li>
+              <li>Fluent in English</li>
+              <li>Relevant education and series of projects</li>
+            </ul>
           </div>
         </div>
         {/*<!-- About Section Button-->*/}
