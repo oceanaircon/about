@@ -22,6 +22,9 @@ const Contact = () => {
           </div>
           <div className="divider-custom-line"></div>
         </div>
+        <div>
+          <h2 className="text-center">oliverthek@gmail.com</h2>
+        </div>
         {/*<!-- Contact Section Form-->*/}
         <div className="row justify-content-center">
           <div className="col-lg-8 col-xl-7">
