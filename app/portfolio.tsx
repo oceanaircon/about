@@ -27,15 +27,19 @@ const Portfolio = () => {
         <div className="container text-center">
           <div className="row justify-content-center">
             <a href="https://printer-bookings.vercel.app">
-              <h3>printer-bookings.vercel.app</h3>
+              <h3>Printer Bookings</h3>
             </a>
-            <h5>A printer rental admin dashboard</h5>
+            <h5>
+              A printer rental admin dashboard, that can connect printers with
+              customers in contracts, and ables to print worksheets from
+              received issues.
+            </h5>
           </div>
           <div className="row justify-content-center">
             <a href="https://teddlefoldre.vercel.app">
-              <h3>teddlefoldre.vercel.app</h3>
+              <h3>Teddlefoldre</h3>
             </a>
-            <h5>Create your own blog</h5>
+            <h5>A social media web app</h5>
           </div>
         </div>
       </div>

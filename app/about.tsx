@@ -30,7 +30,7 @@ const About = () => {
           <div className="col-lg-4 ms-auto">
             <h3>PRACTICE</h3>
             <ul>
-              <li>Fullstack Web Developer</li>
+              <li>Full Stack Web Developer</li>
               <li>HTML5, CSS3, JavaScript</li>
               <li>TypeScript, Node.js, React.js, Next.js</li>
               <li>Building Rest API with Node.js, PHP, Java Springboot</li>
