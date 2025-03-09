@@ -8,9 +8,9 @@ import { z } from "zod";
 const url = process.env.URL;
 
 const createMessengerSchema = z.object({
-  name: z.string().min(2, { message: "Must be 2 or more characters long" }),
-  email: z.string().email({ message: "Invalid email address" }),
-  message: z.string().min(12, { message: "Must be 2 or more characters long" }),
+  name: z.string().min(2),
+  email: z.string().email(),
+  message: z.string(),
 });
 
 export async function createMessenger(formData: FormData) {

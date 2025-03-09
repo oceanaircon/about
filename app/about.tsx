@@ -30,25 +30,24 @@ const About = () => {
           <div className="col-lg-4 ms-auto">
             <h3>PRACTICE</h3>
             <ul>
-              <li>Full-stack web developer</li>
-              <li>HTML5, CSS3, Javascript - 3 years</li>
-              <li>MySQL, MongoDB, ORM - 3 years</li>
-              <li>Typescript, Node, React, Next.js - 2 years </li>
-              <li>Building Rest API with Node.js or PHP</li>
-              <li>Git - 2 years</li>
-              <li>C#, .NET, Java, Python, PHP - 2 years </li>
+              <li>Fullstack Web Developer</li>
+              <li>HTML5, CSS3, JavaScript</li>
+              <li>TypeScript, Node.js, React.js, Next.js</li>
+              <li>Building Rest API with Node.js, PHP, Java Springboot</li>
+              <li>Relational Databases, MongoDB</li>
+              <li>Git, Docker</li>
             </ul>
           </div>
           <div className="col-lg-4 ms-auto">
             <p className="lead"></p>
             <h3>SKILLS</h3>
             <ul>
-              <li>Passionate about coding </li>
               <li>
-                Ability to solve problems and to adjust to deadlines and project
-                goals
+                Passionate about building robust and scalable web applications
+                with React and Next.js
               </li>
-              <li>Fluent in English</li>
+              <li>Developing interactive and easy to use user interfaces</li>
+              <li>Designing scalable and fast database structures</li>
               <li>Relevant education and series of projects</li>
             </ul>
           </div>
