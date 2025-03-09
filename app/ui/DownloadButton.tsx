@@ -10,7 +10,7 @@ export default function DownloadButton() {
     const url = window.URL.createObjectURL(blob);
     const link = document.createElement("a");
     link.href = url;
-    link.download = "public/theko_resume.pdf";
+    link.download = "public/theko_resume.docx";
     link.click();
     window.URL.revokeObjectURL(url);
   };
