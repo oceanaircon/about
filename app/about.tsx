@@ -30,25 +30,24 @@ const About = () => {
           <div className="col-lg-4 ms-auto">
             <h3>PRACTICE</h3>
             <ul>
-              <li>Full Stack Web Developer</li>
-              <li>HTML5, CSS3, JavaScript</li>
-              <li>TypeScript, Node.js, React.js, Next.js</li>
-              <li>Building Rest API with Node.js, PHP, Java Springboot</li>
-              <li>Relational Databases, MongoDB</li>
-              <li>Git, Docker</li>
+              <span>
+                My name is Oliver Thek, I am a Front End Web Developer with 2+
+                years of experience in building robust and scalable web
+                applications using Next.js, React.js, TypeScript and Tailwind
+                CSS, committed to write clean, high quality code with automated
+                testing. I have a special sense for refactoring code.
+              </span>
             </ul>
           </div>
           <div className="col-lg-4 ms-auto">
             <p className="lead"></p>
             <h3>SKILLS</h3>
             <ul>
-              <li>
-                Passionate about building robust and scalable web applications
-                with React and Next.js
-              </li>
-              <li>Developing interactive and easy to use user interfaces</li>
-              <li>Designing scalable and fast database structures</li>
-              <li>Relevant education and series of projects</li>
+              <li>Creativity, problem-solving</li>
+              <li>HTML5, CSS3, JavaScript</li>
+              <li>TypeScript, React.js, Next.js</li>
+              <li>Relational Databases</li>
+              <li>Git</li>
             </ul>
           </div>
         </div>
